@@ -1,0 +1,10 @@
+export { default as CustomInput } from "./inputs/PrimaryInput";
+export { default as AuthButton } from "./buttons/PrimaryButton";
+export { default as Sidebar } from "./navbar/sidebar";
+export { default as InputWithLeftIcon } from "./inputs/InputWithLeftIcon";
+export { default as MobileNavbar } from "./navbar/MobileNavigation";
+export { default as DashCard } from "./cards/DashCard";
+export { default as StudentDataTable } from "./table/StudentData";
+export { default as StudentComponent } from "./students";
+export { default as LoginPage } from "./login";
+export { default as RegisterPage } from "./register";

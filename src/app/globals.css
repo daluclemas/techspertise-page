@@ -1,33 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "react-toastify/dist/ReactToastify.css";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: rgba(39, 119, 155, 1);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* table custom styles */
+.table > :not(caption) > * > * {
+  background-color: transparent;
+  padding: 13px 24px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.paginator-wrapper {
+  padding: 0 0.6rem;
+}
+
+.paginator-wrapper li {
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginator-wrapper li a {
+  border-right: 0.1rem solid rgba(208, 213, 221, 1);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginator-wrapper li a:nth-child(9) {
+  border-right: 0;
+}
+
+@media (min-width: 1024px) {
+  .main-wrap {
+    border-radius: 40px 0 0 40px;
   }
 }
